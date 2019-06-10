@@ -9,9 +9,9 @@ Admin: `Cyanlin` `AstraLee`
 
 This project is divided into two part:
 
-1. **LNC controller**
+1. **LNC controller**  
 	In this part, Socket C++ (Server)interface should be combined with LNC controller.
-2. **Database**
+2. **Database**  
 	We use Python for building Datebase, and the data received from socket client will be updated and upload to the database.
 
 
