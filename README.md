@@ -2,7 +2,7 @@
 
 # LNC controller and set up a database!
 
-::: info
+:::info
 
 Admin: Cyanlin AstraLee
 
