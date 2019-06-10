@@ -4,7 +4,6 @@ import pymongo
 from bson import ObjectId
 import pprint
 
-
 def main():
     # Connect to MongoDB instance
     connection = pymongo.MongoClient("mongodb://localhost:27017")
