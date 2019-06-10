@@ -1,0 +1,320 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.4.12)  21 MAY 2019 16:36
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"/home/astra/Desktop/Sem 2/Industry4.0/Final Project/final_project.tex"
+(/home/astra/Desktop/Sem 2/Industry4.0/Final Project/final_project.tex
+LaTeX2e <2018-12-01>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/usr/share/texmf/tex/latex/CJK/CJKutf8.sty
+Package: CJKutf8 2015/04/18 4.8.4
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+) (/usr/share/texmf/tex/latex/CJK/CJK.sty
+Package: CJK 2015/04/18 4.8.4
+ (/usr/share/texmf/tex/latex/CJK/mule/MULEenc.sty
+Package: MULEenc 2015/04/18 4.8.4
+) (/usr/share/texmf/tex/latex/CJK/CJK.enc
+File: CJK.enc 2015/04/18 4.8.4
+Now handling font encoding C00 ...
+... no UTF-8 mapping file for font encoding C00
+Now handling font encoding C05 ...
+... no UTF-8 mapping file for font encoding C05
+Now handling font encoding C09 ...
+... no UTF-8 mapping file for font encoding C09
+Now handling font encoding C10 ...
+... no UTF-8 mapping file for font encoding C10
+Now handling font encoding C20 ...
+... no UTF-8 mapping file for font encoding C20
+Now handling font encoding C19 ...
+... no UTF-8 mapping file for font encoding C19
+Now handling font encoding C40 ...
+... no UTF-8 mapping file for font encoding C40
+Now handling font encoding C42 ...
+... no UTF-8 mapping file for font encoding C42
+Now handling font encoding C43 ...
+... no UTF-8 mapping file for font encoding C43
+Now handling font encoding C50 ...
+... no UTF-8 mapping file for font encoding C50
+Now handling font encoding C52 ...
+... no UTF-8 mapping file for font encoding C52
+Now handling font encoding C49 ...
+... no UTF-8 mapping file for font encoding C49
+Now handling font encoding C60 ...
+... no UTF-8 mapping file for font encoding C60
+Now handling font encoding C61 ...
+... no UTF-8 mapping file for font encoding C61
+Now handling font encoding C63 ...
+... no UTF-8 mapping file for font encoding C63
+Now handling font encoding C64 ...
+... no UTF-8 mapping file for font encoding C64
+Now handling font encoding C65 ...
+... no UTF-8 mapping file for font encoding C65
+Now handling font encoding C70 ...
+... no UTF-8 mapping file for font encoding C70
+Now handling font encoding C31 ...
+... no UTF-8 mapping file for font encoding C31
+Now handling font encoding C32 ...
+... no UTF-8 mapping file for font encoding C32
+Now handling font encoding C33 ...
+... no UTF-8 mapping file for font encoding C33
+Now handling font encoding C34 ...
+... no UTF-8 mapping file for font encoding C34
+Now handling font encoding C35 ...
+... no UTF-8 mapping file for font encoding C35
+Now handling font encoding C36 ...
+... no UTF-8 mapping file for font encoding C36
+Now handling font encoding C37 ...
+... no UTF-8 mapping file for font encoding C37
+Now handling font encoding C80 ...
+... no UTF-8 mapping file for font encoding C80
+Now handling font encoding C81 ...
+... no UTF-8 mapping file for font encoding C81
+Now handling font encoding C01 ...
+... no UTF-8 mapping file for font encoding C01
+Now handling font encoding C11 ...
+... no UTF-8 mapping file for font encoding C11
+Now handling font encoding C21 ...
+... no UTF-8 mapping file for font encoding C21
+Now handling font encoding C41 ...
+... no UTF-8 mapping file for font encoding C41
+Now handling font encoding C62 ...
+... no UTF-8 mapping file for font encoding C62
+)
+LaTeX Info: Redefining \selectfont on input line 755.
+\CJK@indent=\box27
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+)) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count88
+\float@exts=\toks16
+\float@box=\box28
+\@float@everytoks=\toks17
+\@floatcapt=\box29
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+) (/home/astra/Desktop/Sem 2/Industry4.0/Final Project/final_project.aux)
+\openout1 = `final_project.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count89
+\scratchdimen=\dimen105
+\scratchbox=\box30
+\nofMPsegments=\count90
+\nofMParguments=\count91
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count92
+\MPscratchDim=\dimen106
+\MPnumerator=\count93
+\makeMPintoPDFobject=\count94
+\everyMPtoPDFconversion=\toks20
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+))) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)))) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+)) (/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.bdg
+File: UTF8.bdg 2015/04/18 4.8.4
+) (/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+) (/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+LaTeX Font Info:    Try loading font information for C70+bkai on input line 12.
+ (/usr/share/texmf/tex/latex/CJK/UTF8/c70bkai.fd
+File: c70bkai.fd 2008/10/03 4.8.1
+) (/usr/share/texmf/tex/latex/CJK/UTF8/c70bkai.fdx
+File: c70bkai.fdx 2012/05/07 4.8.3
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 12.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 12.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 12.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
+<flow4.png, id=30, 487.8225pt x 356.33125pt>
+File: flow4.png Graphic file (type png)
+<use flow4.png>
+Package pdftex.def Info: flow4.png  used on input line 24.
+(pdftex.def)             Requested size: 341.47342pt x 249.43016pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/astra/Desktop/Sem 2/Industry4.0/Final Project/flow4.png>]
+<controller.png, id=77, 371.3875pt x 453.695pt>
+File: controller.png Graphic file (type png)
+<use controller.png>
+Package pdftex.def Info: controller.png  used on input line 32.
+(pdftex.def)             Requested size: 185.69328pt x 226.84694pt.
+<controller2.png, id=80, 479.7925pt x 452.69125pt>
+File: controller2.png Graphic file (type png)
+<use controller2.png>
+Package pdftex.def Info: controller2.png  used on input line 38.
+(pdftex.def)             Requested size: 239.89565pt x 226.34506pt.
+ [2 </home/astra/Desktop/Sem 2/Industry4.0/Final Project/controller.png> </home/astra/Desktop/Sem 2/Industry4.0/Final Project/controller2.png>] (/home/astra/Desktop/Sem 2/Industry4.0/Final Project/final_project.aux) ) 
+Here is how much of TeX's memory you used:
+ 3290 strings out of 492614
+ 43717 string characters out of 6131384
+ 105004 words of memory out of 5000000
+ 7037 multiletter control sequences out of 15000+600000
+ 22241 words of font info for 79 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,11n,25p,334b,971s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu30.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu4e.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu4f.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu51.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu52.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu53.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu56.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu57.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu59.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu5b.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu5c.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu5d.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu5e.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu5f.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu63.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu64.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu65.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu66.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu67.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu69.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu6d.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu76.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu78.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu7a.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu7c.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu7d.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu83.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu85.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu8a.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu8c.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu8e.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu90.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu95.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu98.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu9a.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiu9e.pfb></usr/share/texmf/fonts/type1/arphic/bkaiu/bkaiuff.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on "/home/astra/Desktop/Sem 2/Industry4.0/Final Project/final_project.pdf" (2 pages, 385748 bytes).
+PDF statistics:
+ 224 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 164 words of extra memory for PDF output out of 10000 (max. 10000000)
+
