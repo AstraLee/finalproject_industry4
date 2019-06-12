@@ -1,0 +1,6 @@
+C:\Users\Astra\Desktop\CS_socket_server\Server\Client\bin\Debug\Client.exe.config
+C:\Users\Astra\Desktop\CS_socket_server\Server\Client\bin\Debug\Client.exe
+C:\Users\Astra\Desktop\CS_socket_server\Server\Client\bin\Debug\Client.pdb
+C:\Users\Astra\Desktop\CS_socket_server\Server\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+C:\Users\Astra\Desktop\CS_socket_server\Server\Client\obj\Debug\Client.exe
+C:\Users\Astra\Desktop\CS_socket_server\Server\Client\obj\Debug\Client.pdb
