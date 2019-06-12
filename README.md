@@ -2,7 +2,7 @@
 
 ## LNC controller and set up a database!
 
-### Admin: `Cyanlin` `AstraLee`
+### Admin: `Cyanlin` `AstraLee` 'Albert Lee' 'Kevin Lee'
 ---
 
 This project is divided into two part:
