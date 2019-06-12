@@ -1,0 +1,9 @@
+;/* Tool Life Management */
+G00 X0. Z0.;
+G00 X5.;;
+G00 X10.;
+    Z10.;
+G00 X20. ;
+G00 X0. Z0
+M99;
+M30;
