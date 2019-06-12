@@ -3,6 +3,8 @@ import time
 import pymongo
 from bson import ObjectId
 import pprint
+import struct
+from struct import unpack
 
 def main():
     # Connect to MongoDB instance
@@ -77,7 +79,7 @@ def remove_data(document_id):
 def server_program():
     # get the hostname
     host = ''
-    port = 5001  # initiate port no above 1024
+    port = 8888  
 
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # get instance
     print("Server socket created")
@@ -87,27 +89,28 @@ def server_program():
     print("Server socket bound with host {} port {}".format(host, port))
     print('Listening...')
     # configure how many client the server can listen simultaneously
-    server_socket.listen(5) #for eg. 5
+    server_socket.listen(1) #for eg. 5
     conn, address = server_socket.accept()  # accept new connection
     
-    count = 0
+
     
     print("Connection from: " + str(address))
     while True:
-        count = count + 1
-        print("Accepted {} connections so far".format(count))
 
         # receive data stream. it won't accept data packet greater than 1024 bytes
-        data = conn.recv(1024).decode()
-        currentTime = time.ctime(time.time()) + "\r\n"
-        conn.send(currentTime.encode('ascii'))
+        data = conn.recv(12*4)
+        print(struct.unpack('L', data[:4]))
+        print(struct.unpack('L', data[4:8]))
+        print(struct.unpack('L', data[24:28]))
+        
+        
+        
+        #currentTime = time.ctime(time.time()) + "\r\n"
+        #conn.send(currentTime.encode('ascii'))
 
-        if not data:
-            # if data is not received break
-            break
-        print("from connected user: \'" + str(data) + '\' ' + str(currentTime))
-        data = input(' -> ')
-        conn.send(data.encode())  # send data to the client
+        #print("from connected user: \'" + str(data) + '\' ' + str(currentTime))
+        #data = input(' -> ')
+        #conn.send(data.encode())  # send data to the client
     
     conn.close()  # close the connection
 
