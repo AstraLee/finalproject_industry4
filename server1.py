@@ -32,15 +32,18 @@ def server_program():
 
     list_MAC = ['MAC_X', 'MAC_Y', 'MAC_Z', 'MAC_A', 'MAC_B', 'MAC_C']
     list_ABS = ['ABS_X', 'ABS_Y', 'ABS_Z', 'ABS_A', 'ABS_B', 'ABS_C']
+
     
     while True:
         data = conn.recv(12*4)
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-        for i in range(len(list_MAC)-1):
-            document_MAC = collection_MAC.insert_one({'timestamp' : datetime.now().strftime('%Y-%m-%d %H:%M:%S'), list_MAC[i]: struct.unpack('l', data[4*i:4*(i+1)])[0]})
-        
-        for i in range(len(list_ABS)-1):
-            document_ABS = collection_ABS.insert_one({'timestamp' : datetime.now().strftime('%Y-%m-%d %H:%M:%S'), list_ABS[i]: struct.unpack('l', data[4*(i+6):4*(i+7)])[0]})
+        document_MAC = collection_MAC.insert_one({'timestamp' : timestamp, list_MAC[0]: struct.unpack('l', data[0:4])[0],
+                                                                           list_MAC[1]: struct.unpack('l', data[4:8])[0],
+                                                    })
+
+        document_ABS = collection_ABS.insert_one({'timestamp' : timestamp, list_ABS[0]: struct.unpack('l', data[24:28])[0],
+                                                                           list_ABS[1]: struct.unpack('l', data[28:32])[0]})
 
     conn.close()  # close the connection
   
