@@ -5,51 +5,74 @@ import struct
 from struct import unpack
 from datetime import datetime
 
-## server connection
-def server_program():
-    host = ''
-    port = 8888  
+class SocketServer:
+    def __init__(self, host, port):
+        self.port = port
+        self.host = host
+        self.server_socket = None
+        self.client_socket = None
+        self.recv_buffer = "" 
 
-    server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    print("Server socket created")
 
-    # look closely. The bind() function takes tuple as argument
-    server_socket.bind((host, port))
-    print("Server socket bound with host {} port {}".format(host, port))
-    print('Listening...')
+    def init_socket(self):
+        self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        print("Server socket created")
 
-    # configure how many client the server can listen simultaneously
-    server_socket.listen(1)
-    conn, address = server_socket.accept()  # accept new connection
+        # look closely. The bind() function takes tuple as argument
+        self.server_socket.bind((self.host, self.port))
+        print("Server socket bound with host {} port {}".format(self.host, self.port))
+
     
-    print("Connection from: " + str(address))
+    def listen(self, num):
+        print('Listening...')
+        self.server_socket.listen(num)
+        self.client_socket, address = self.server_socket.accept()  # accept new connection
+    
+        print("Connection from: " + str(address))
 
+    def receive(self, n_bytes):
+        self.recv_buffer = self.client_socket.recv(n_bytes)
+        print("{0} bytes data received ".format(len(self.recv_buffer)))
+        return len(self.recv_buffer)
+    
+    def close_client(self):
+        self.client_socket.close()
+
+  
+if __name__ == '__main__':
+
+# init socket
+    server = SocketServer('', 8888)
+    server.init_socket()
+    server.listen(1)
+
+# DB setup
     connection = pymongo.MongoClient("mongodb://localhost:27017")
 
     database = connection['my_database']
     collection_ABS = database['my_collection_ABS']
     collection_MAC = database['my_collection_MAC']
 
-    list_MAC = ['MAC_X', 'MAC_Y', 'MAC_Z', 'MAC_A', 'MAC_B', 'MAC_C']
-    list_ABS = ['ABS_X', 'ABS_Y', 'ABS_Z', 'ABS_A', 'ABS_B', 'ABS_C']
+    list_MAC = ['MAC_X', 'MAC_Y']
+    list_ABS = ['ABS_X', 'ABS_Y']
 
-    
+    n_bytes = 12 * 4
+
     while True:
-        data = conn.recv(12*4)
+
+        iResult = server.receive(n_bytes)
+        
         timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        
+        if(iResult > 0):
+            document_MAC = collection_MAC.insert_one({'timestamp' : timestamp, list_MAC[0]: struct.unpack('l', server.recv_buffer[0:4])[0],
+                                                                           list_MAC[1]: struct.unpack('l', server.recv_buffer[4:8])[0]})
+            document_ABS = collection_ABS.insert_one({'timestamp' : timestamp, list_ABS[0]: struct.unpack('l', server.recv_buffer[24:28])[0],
+                                                                       list_ABS[1]: struct.unpack('l', server.recv_buffer[28:32])[0]})
 
-        document_MAC = collection_MAC.insert_one({'timestamp' : timestamp, list_MAC[0]: struct.unpack('l', data[0:4])[0],
-                                                                           list_MAC[1]: struct.unpack('l', data[4:8])[0],
-                                                    })
-
-        document_ABS = collection_ABS.insert_one({'timestamp' : timestamp, list_ABS[0]: struct.unpack('l', data[24:28])[0],
-                                                                           list_ABS[1]: struct.unpack('l', data[28:32])[0]})
-
-    conn.close()  # close the connection
-  
-if __name__ == '__main__':
-    server_program()
-    
+        else:
+            server.close_client()
+            server.listen(1)
 
     
 

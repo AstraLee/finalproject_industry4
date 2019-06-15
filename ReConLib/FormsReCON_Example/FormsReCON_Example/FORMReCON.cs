@@ -37,8 +37,8 @@ namespace FormsReCON_Example
         public static int[] Pos_MAC = new int[6]{0, 0, 0, 0, 0, 0};
         public static int[] Pos_ABS = new int[6]{0, 0, 0, 0, 0, 0};
         public SocketClient mSocketClient = null;
-        
-        
+
+
 
         public void componentInitial()
         {
@@ -655,7 +655,21 @@ namespace FormsReCON_Example
             Processing = 1;
         }
 
+        private void socket_timer_Tick(object sender, EventArgs e)
+        {
+            this.socket_timer.Enabled = false;
 
+            if (mSocketClient != null)
+            {
+                ReadPos();
+                byte[] dataFrame = new byte[sizeof(int) * Pos_ABS.Length + sizeof(int) * Pos_MAC.Length];
+                Buffer.BlockCopy(Pos_MAC, 0, dataFrame, 0, sizeof(int) * Pos_MAC.Length);
+                Buffer.BlockCopy(Pos_ABS, 0, dataFrame, sizeof(int) * Pos_MAC.Length, sizeof(int) * Pos_ABS.Length);
+
+                mSocketClient.SendBytes(dataFrame);
+            }
+            this.socket_timer.Enabled = true;
+        }
 
 
         private void tStatus_Tick(object sender, EventArgs e)
@@ -673,15 +687,6 @@ namespace FormsReCON_Example
             else if (this.ReCONTAB.SelectedTab == PROG_TAB)
                 FormPROGfreshData();
 
-            if (mSocketClient != null)
-            {
-                ReadPos();
-                byte[] dataFrame = new byte[sizeof(int) * Pos_ABS.Length + sizeof(int) * Pos_MAC.Length];
-                Buffer.BlockCopy(Pos_MAC, 0, dataFrame, 0, sizeof(int) * Pos_MAC.Length);
-                Buffer.BlockCopy(Pos_ABS, 0, dataFrame, sizeof(int) * Pos_MAC.Length, sizeof(int) * Pos_ABS.Length);
-                
-                mSocketClient.SendBytes(dataFrame);
-            }
             this.tStatus.Enabled = true;
         }
 
@@ -1023,8 +1028,8 @@ namespace FormsReCON_Example
         {
             for (int i = 0; i < 6; i++)
             {
-                Pos_MAC[i] = scif_dll.scif_ReadR(scif_dll.R_AXIS_R_INT_MACHINE_POS + Convert.ToUInt32(i));
-                Pos_ABS[i] = scif_dll.scif_ReadR(scif_dll.R_AXIS_R_INT_POS_ABSOLUTE + Convert.ToUInt32(i));
+                Pos_MAC[i] = scif_dll.scif_ReadR(scif_dll.R_AXIS_R_INT_MACHINE_POS + Convert.ToUInt32(i)) + (-1024);
+                Pos_ABS[i] = scif_dll.scif_ReadR(scif_dll.R_AXIS_R_INT_POS_ABSOLUTE + Convert.ToUInt32(i)) + (100000);
             }
         }
 
@@ -1038,7 +1043,8 @@ namespace FormsReCON_Example
 
         private void DB_btDisconnect_Click(object sender, EventArgs e)
         {
-            mSocketClient.Close();
+            if(mSocketClient != null)
+                mSocketClient.Close();
             mSocketClient = null;
         }
     

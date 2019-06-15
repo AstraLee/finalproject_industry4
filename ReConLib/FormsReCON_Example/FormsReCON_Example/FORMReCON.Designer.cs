@@ -114,6 +114,7 @@
             this.Connect_btIPConnect = new System.Windows.Forms.Button();
             this.ReCONTAB = new System.Windows.Forms.TabControl();
             this.Ftp_TAB = new System.Windows.Forms.TabPage();
+            this.Ftp_edPath = new System.Windows.Forms.TextBox();
             this.Ftp_lbStats = new System.Windows.Forms.Label();
             this.Ftp_btReset = new System.Windows.Forms.Button();
             this.Ftp_Downloads = new System.Windows.Forms.Button();
@@ -133,7 +134,6 @@
             this.Ftp_btDelectlocal = new System.Windows.Forms.Button();
             this.Ftp_btSelectPath = new System.Windows.Forms.Button();
             this.label25 = new System.Windows.Forms.Label();
-            this.Ftp_edPath = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
@@ -155,6 +155,7 @@
             this.PROG_gdProgView = new System.Windows.Forms.DataGridView();
             this.pnConsole = new System.Windows.Forms.Panel();
             this.tStatus = new System.Windows.Forms.Timer(this.components);
+            this.socket_timer = new System.Windows.Forms.Timer(this.components);
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.Connect_pnWarning = new System.Windows.Forms.Panel();
             this.label45 = new System.Windows.Forms.Label();
@@ -995,7 +996,7 @@
             this.Connect_DBIP.FormattingEnabled = true;
             this.Connect_DBIP.Location = new System.Drawing.Point(12, 25);
             this.Connect_DBIP.Name = "Connect_DBIP";
-            this.Connect_DBIP.Size = new System.Drawing.Size(157, 27);
+            this.Connect_DBIP.Size = new System.Drawing.Size(162, 27);
             this.Connect_DBIP.TabIndex = 5;
             this.Connect_DBIP.Text = "127.0.0.1";
             // 
@@ -1174,6 +1175,16 @@
             this.Ftp_TAB.TabIndex = 3;
             this.Ftp_TAB.Text = "Ftp檔案傳輸";
             this.Ftp_TAB.UseVisualStyleBackColor = true;
+            // 
+            // Ftp_edPath
+            // 
+            this.Ftp_edPath.Font = new System.Drawing.Font("新細明體", 10F, System.Drawing.FontStyle.Bold);
+            this.Ftp_edPath.Location = new System.Drawing.Point(12, 28);
+            this.Ftp_edPath.Name = "Ftp_edPath";
+            this.Ftp_edPath.Size = new System.Drawing.Size(262, 23);
+            this.Ftp_edPath.TabIndex = 19;
+            this.Ftp_edPath.Tag = "11664";
+            this.Ftp_edPath.Text = "D:\\LNC\\Project\\ReCONLib\\Ex\\C#\\FormsReCON_Example\\NCFILE";
             // 
             // Ftp_lbStats
             // 
@@ -1391,16 +1402,6 @@
             this.label25.Size = new System.Drawing.Size(0, 16);
             this.label25.TabIndex = 11;
             // 
-            // Ftp_edPath
-            // 
-            this.Ftp_edPath.Font = new System.Drawing.Font("新細明體", 10F, System.Drawing.FontStyle.Bold);
-            this.Ftp_edPath.Location = new System.Drawing.Point(12, 28);
-            this.Ftp_edPath.Name = "Ftp_edPath";
-            this.Ftp_edPath.Size = new System.Drawing.Size(262, 23);
-            this.Ftp_edPath.TabIndex = 19;
-            this.Ftp_edPath.Tag = "11664";
-            this.Ftp_edPath.Text = "D:\\LNC\\Project\\ReCONLib\\Ex\\C#\\FormsReCON_Example\\NCFILE";
-            // 
             // label26
             // 
             this.label26.AutoSize = true;
@@ -1466,7 +1467,7 @@
             this.PROG_TAB.Location = new System.Drawing.Point(4, 26);
             this.PROG_TAB.Name = "PROG_TAB";
             this.PROG_TAB.Padding = new System.Windows.Forms.Padding(3);
-            this.PROG_TAB.Size = new System.Drawing.Size(790, 233);
+            this.PROG_TAB.Size = new System.Drawing.Size(740, 233);
             this.PROG_TAB.TabIndex = 4;
             this.PROG_TAB.Text = "程式監視";
             this.PROG_TAB.UseVisualStyleBackColor = true;
@@ -1608,6 +1609,12 @@
             this.tStatus.Enabled = true;
             this.tStatus.Interval = 10;
             this.tStatus.Tick += new System.EventHandler(this.tStatus_Tick);
+            // 
+            // socket_timer
+            // 
+            this.socket_timer.Enabled = true;
+            this.socket_timer.Interval = 1000;
+            this.socket_timer.Tick += new System.EventHandler(this.socket_timer_Tick);
             // 
             // groupBox3
             // 
@@ -1792,6 +1799,7 @@
         private System.Windows.Forms.Button Connect_btDetect;
         private System.Windows.Forms.Button Connect_btConnect;
         public System.Windows.Forms.Timer tStatus;
+        public System.Windows.Forms.Timer socket_timer;
         private System.Windows.Forms.Label Connect_lbStats;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label9;
