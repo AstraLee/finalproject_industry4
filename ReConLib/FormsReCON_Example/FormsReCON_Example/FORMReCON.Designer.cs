@@ -1002,7 +1002,7 @@
             // 
             // DB_btDisconnect
             // 
-            this.DB_btDisconnect.BackColor = System.Drawing.Color.Red;
+            this.DB_btDisconnect.BackColor = System.Drawing.Color.SkyBlue;
             this.DB_btDisconnect.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.DB_btDisconnect.ForeColor = System.Drawing.Color.Black;
             this.DB_btDisconnect.Location = new System.Drawing.Point(195, 21);
@@ -1016,7 +1016,7 @@
             // 
             // DB_btConnect
             // 
-            this.DB_btConnect.BackColor = System.Drawing.Color.LawnGreen;
+            this.DB_btConnect.BackColor = System.Drawing.Color.LightCyan;
             this.DB_btConnect.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.DB_btConnect.ForeColor = System.Drawing.Color.Black;
             this.DB_btConnect.Location = new System.Drawing.Point(195, 58);
@@ -1063,7 +1063,7 @@
             // 
             // Connect_btDetect
             // 
-            this.Connect_btDetect.BackColor = System.Drawing.Color.Blue;
+            this.Connect_btDetect.BackColor = System.Drawing.Color.DeepPink;
             this.Connect_btDetect.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Connect_btDetect.ForeColor = System.Drawing.Color.White;
             this.Connect_btDetect.Location = new System.Drawing.Point(274, 41);
@@ -1076,7 +1076,7 @@
             // 
             // Connect_btConnect
             // 
-            this.Connect_btConnect.BackColor = System.Drawing.Color.LawnGreen;
+            this.Connect_btConnect.BackColor = System.Drawing.Color.LightCyan;
             this.Connect_btConnect.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Connect_btConnect.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Connect_btConnect.ForeColor = System.Drawing.Color.Black;
@@ -1114,7 +1114,7 @@
             // 
             // Connect_btDisConnect
             // 
-            this.Connect_btDisConnect.BackColor = System.Drawing.Color.Red;
+            this.Connect_btDisConnect.BackColor = System.Drawing.Color.SkyBlue;
             this.Connect_btDisConnect.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Connect_btDisConnect.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Connect_btDisConnect.ForeColor = System.Drawing.Color.Black;
@@ -1129,7 +1129,7 @@
             // 
             // Connect_btIPConnect
             // 
-            this.Connect_btIPConnect.BackColor = System.Drawing.Color.LawnGreen;
+            this.Connect_btIPConnect.BackColor = System.Drawing.Color.LightCyan;
             this.Connect_btIPConnect.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Connect_btIPConnect.ForeColor = System.Drawing.Color.Black;
             this.Connect_btIPConnect.Location = new System.Drawing.Point(195, 56);
@@ -1566,22 +1566,24 @@
             // 
             // PROG_btHold
             // 
+            this.PROG_btHold.BackColor = System.Drawing.Color.SkyBlue;
             this.PROG_btHold.Location = new System.Drawing.Point(565, 111);
             this.PROG_btHold.Name = "PROG_btHold";
             this.PROG_btHold.Size = new System.Drawing.Size(85, 54);
             this.PROG_btHold.TabIndex = 2;
             this.PROG_btHold.Text = "Pause";
-            this.PROG_btHold.UseVisualStyleBackColor = true;
+            this.PROG_btHold.UseVisualStyleBackColor = false;
             this.PROG_btHold.Click += new System.EventHandler(this.PROG_btHold_Click);
             // 
             // PROG_btCirceStart
             // 
+            this.PROG_btCirceStart.BackColor = System.Drawing.Color.LightCyan;
             this.PROG_btCirceStart.Location = new System.Drawing.Point(565, 51);
             this.PROG_btCirceStart.Name = "PROG_btCirceStart";
             this.PROG_btCirceStart.Size = new System.Drawing.Size(85, 54);
             this.PROG_btCirceStart.TabIndex = 1;
             this.PROG_btCirceStart.Text = "Start";
-            this.PROG_btCirceStart.UseVisualStyleBackColor = true;
+            this.PROG_btCirceStart.UseVisualStyleBackColor = false;
             this.PROG_btCirceStart.Click += new System.EventHandler(this.PROG_btCirceStart_Click);
             // 
             // PROG_gdProgView
@@ -1705,6 +1707,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(791, 532);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.pnConsole);
