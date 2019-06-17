@@ -411,6 +411,7 @@ namespace FormsReCON_Example
         //-------------------------------------------
         #region scif_define_pac.h
 
+        public const uint R_LOAD = 250096;   // Load of X-axis
 
         //===========================人機自訂的參數=============================== 
         public const uint R_SERVO_ON = 0;    //1~32軸Servo On, Bit型式

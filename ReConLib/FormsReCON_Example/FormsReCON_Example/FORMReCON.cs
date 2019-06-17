@@ -36,6 +36,8 @@ namespace FormsReCON_Example
         // For data sending
         public static int[] Pos_MAC = new int[6]{0, 0, 0, 0, 0, 0};
         public static int[] Pos_ABS = new int[6]{0, 0, 0, 0, 0, 0};
+        public static int[] Load = new int[6] { 0, 0, 0, 0, 0, 0 };
+
         public SocketClient mSocketClient = null;
 
 
@@ -658,13 +660,15 @@ namespace FormsReCON_Example
         private void socket_timer_Tick(object sender, EventArgs e)
         {
             this.socket_timer.Enabled = false;
-
+//            FormCoorfreshData();
             if (mSocketClient != null)
             {
                 ReadPos();
-                byte[] dataFrame = new byte[sizeof(int) * Pos_ABS.Length + sizeof(int) * Pos_MAC.Length];
+                byte[] dataFrame = new byte[sizeof(int) * Pos_ABS.Length + sizeof(int) * Pos_MAC.Length + sizeof(int) * Load.Length];
                 Buffer.BlockCopy(Pos_MAC, 0, dataFrame, 0, sizeof(int) * Pos_MAC.Length);
                 Buffer.BlockCopy(Pos_ABS, 0, dataFrame, sizeof(int) * Pos_MAC.Length, sizeof(int) * Pos_ABS.Length);
+                Buffer.BlockCopy(Load, 0, dataFrame, sizeof(int) * Pos_ABS.Length + sizeof(int) * Pos_MAC.Length, 
+                                                                                                                sizeof(int) * Load.Length);
 
                 mSocketClient.SendBytes(dataFrame);
             }
@@ -1028,8 +1032,9 @@ namespace FormsReCON_Example
         {
             for (int i = 0; i < 6; i++)
             {
-                Pos_MAC[i] = scif_dll.scif_ReadR(scif_dll.R_AXIS_R_INT_MACHINE_POS + Convert.ToUInt32(i)) + (-1024);
-                Pos_ABS[i] = scif_dll.scif_ReadR(scif_dll.R_AXIS_R_INT_POS_ABSOLUTE + Convert.ToUInt32(i)) + (100000);
+                Pos_MAC[i] = scif_dll.scif_ReadR(scif_dll.R_AXIS_R_INT_MACHINE_POS + Convert.ToUInt32(i));
+                Pos_ABS[i] = scif_dll.scif_ReadR(scif_dll.R_AXIS_R_INT_POS_ABSOLUTE + Convert.ToUInt32(i));
+                Load[i] = scif_dll.scif_ReadR(scif_dll.R_LOAD + Convert.ToUInt32(i));
             }
         }
 
