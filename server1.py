@@ -129,6 +129,11 @@ if __name__ == '__main__':
 
 
     
+    conn.close()  # close the connection
 
 
-    
+if __name__ == '__main__':
+    server_program()
+    #main()
+
+    ## dataset (ITERATIVELY)
