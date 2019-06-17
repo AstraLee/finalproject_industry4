@@ -1,80 +1,119 @@
 import socket
 import time
 import pymongo
-import struct
-from struct import unpack
-from datetime import datetime
+from bson import ObjectId
+import pprint
 
-class SocketServer:
-    def __init__(self, host, port):
-        self.port = port
-        self.host = host
-        self.server_socket = None
-        self.client_socket = None
-        self.recv_buffer = "" 
-
-
-    def init_socket(self):
-        self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        print("Server socket created")
-
-        # look closely. The bind() function takes tuple as argument
-        self.server_socket.bind((self.host, self.port))
-        print("Server socket bound with host {} port {}".format(self.host, self.port))
-
-    
-    def listen(self, num):
-        print('Listening...')
-        self.server_socket.listen(num)
-        self.client_socket, address = self.server_socket.accept()  # accept new connection
-    
-        print("Connection from: " + str(address))
-
-    def receive(self, n_bytes):
-        self.recv_buffer = self.client_socket.recv(n_bytes)
-        print("{0} bytes data received ".format(len(self.recv_buffer)))
-        return len(self.recv_buffer)
-    
-    def close_client(self):
-        self.client_socket.close()
-
-  
-if __name__ == '__main__':
-
-# init socket
-    server = SocketServer('', 8888)
-    server.init_socket()
-    server.listen(1)
-
-# DB setup
+def main():
+    # Connect to MongoDB instance
     connection = pymongo.MongoClient("mongodb://localhost:27017")
 
     database = connection['my_database']
-    collection_ABS = database['my_collection_ABS']
-    collection_MAC = database['my_collection_MAC']
+    collection = database['my_collection']
 
-    list_MAC = ['MAC_X', 'MAC_Y']
-    list_ABS = ['ABS_X', 'ABS_Y']
+    encoder = database.encoder_values
+    print('Total Record for the collection: ' + str(encoder.count()))
 
-    n_bytes = 12 * 4
+    results = encoder.find()
+  
 
+def insert_data(data):
+    """
+    Insert new data or document in collection
+    :param data:
+    :return:
+    """
+    document = collection.insert_one(data)
+    return document.inserted_id
+
+
+def update_or_create(document_id, data):
+    """
+    This will create new document in collection
+    IF same document ID exist then update the data
+    :param document_id:
+    :param data:
+    :return:
+    """
+    # TO AVOID DUPLICATES - THIS WILL CREATE NEW DOCUMENT IF SAME ID NOT EXIST
+    document = collection.update_one({'_id': ObjectId(document_id)}, {"$set": data}, upsert=True)
+    return document.acknowledged
+
+
+def get_single_data(document_id):
+    """
+    get document data by document ID
+    :param document_id:
+    :return:
+    """
+    data = collection.find_one({'_id': ObjectId(document_id)})
+    return data
+
+
+def get_multiple_data():
+    """
+    get document data by document ID
+    :return:
+    """
+    data = collection.find()
+    return list(data)
+
+
+def update_existing(document_id, data):
+    """
+    Update existing document data by document ID
+    :param document_id:
+    :param data:
+    :return:
+    """
+    document = collection.update_one({'_id': ObjectId(document_id)}, {"$set": data})
+    return document.acknowledged
+
+
+def remove_data(document_id):
+    document = collection.delete_one({'_id': ObjectId(document_id)})
+    return document.acknowledged
+
+def server_program():
+    # get the hostname
+    host = ''
+    port = 5001  # initiate port no above 1024
+
+    server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # get instance
+    print("Server socket created")
+
+    # look closely. The bind() function takes tuple as argument
+    server_socket.bind((host, port))  # bind host address and port together
+    print("Server socket bound with host {} port {}".format(host, port))
+    print('Listening...')
+    # configure how many client the server can listen simultaneously
+    server_socket.listen(5) #for eg. 5
+    conn, address = server_socket.accept()  # accept new connection
+    
+    count = 0
+    
+    print("Connection from: " + str(address))
     while True:
+        count = count + 1
+        print("Accepted {} connections so far".format(count))
 
-        iResult = server.receive(n_bytes)
-        
-        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        
-        if(iResult > 0):
-            document_MAC = collection_MAC.insert_one({'timestamp' : timestamp, list_MAC[0]: struct.unpack('l', server.recv_buffer[0:4])[0],
-                                                                           list_MAC[1]: struct.unpack('l', server.recv_buffer[4:8])[0]})
-            document_ABS = collection_ABS.insert_one({'timestamp' : timestamp, list_ABS[0]: struct.unpack('l', server.recv_buffer[24:28])[0],
-                                                                       list_ABS[1]: struct.unpack('l', server.recv_buffer[28:32])[0]})
+        # receive data stream. it won't accept data packet greater than 1024 bytes
+        data = conn.recv(1024).decode()
+        currentTime = time.ctime(time.time()) + "\r\n"
+        conn.send(currentTime.encode('ascii'))
 
-        else:
-            server.close_client()
-            server.listen(1)
-
+        if not data:
+            # if data is not received break
+            break
+        print("from connected user: \'" + str(data) + '\' ' + str(currentTime))
+        data = input(' -> ')
+        conn.send(data.encode())  # send data to the client
     
+    conn.close()  # close the connection
 
 
-    
+if __name__ == '__main__':
+    server_program()
+    #main()
+
+    ## dataset (ITERATIVELY)
