@@ -1,0 +1,20 @@
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Primary Scenario}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Hardware}{5}{0}{1}
+\beamer@subsubsectionintoc {1}{2}{1}{{LNC controller}}{5}{0}{1}
+\beamer@subsectionintoc {1}{3}{Software}{6}{0}{1}
+\beamer@subsubsectionintoc {1}{3}{1}{Socket}{6}{0}{1}
+\beamer@subsubsectionintoc {1}{3}{2}{MongoDB}{7}{0}{1}
+\beamer@sectionintoc {2}{Basic Scenario}{9}{0}{2}
+\beamer@subsectionintoc {2}{1}{Ethernet Connection}{9}{0}{2}
+\beamer@subsectionintoc {2}{2}{Data Extraction}{11}{0}{2}
+\beamer@subsectionintoc {2}{3}{Controller}{13}{0}{2}
+\beamer@subsectionintoc {2}{4}{Machining Process}{14}{0}{2}
+\beamer@subsectionintoc {2}{5}{Data Transmission}{15}{0}{2}
+\beamer@subsectionintoc {2}{6}{Primary Scenario Demo}{17}{0}{2}
+\beamer@sectionintoc {3}{Application Scenario}{18}{0}{3}
+\beamer@subsectionintoc {3}{1}{G-code Payload R values}{20}{0}{3}
+\beamer@subsectionintoc {3}{2}{Dynamically Updating Plot}{21}{0}{3}
+\beamer@subsectionintoc {3}{3}{Find data}{22}{0}{3}
+\beamer@subsectionintoc {3}{4}{Application Scenario Demo}{24}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{25}{0}{4}

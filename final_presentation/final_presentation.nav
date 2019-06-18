@@ -1,0 +1,100 @@
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\sectionentry {1}{Introduction}{3}{Introduction}{0}}
+\headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\beamer@subsectionpages {3}{3}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{4}{Primary Scenario}}
+\headcommand {\slideentry {1}{1}{1}{4/4}{Primary Scenario}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\beamer@subsectionpages {4}{4}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{5}{Hardware}}
+\headcommand {\beamer@subsubsectionentry {0}{1}{2}{1}{5}{{LNC controller}}}
+\headcommand {\slideentry {1}{2}{1}{5/5}{Hardware}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\beamer@subsectionpages {5}{5}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{6}{Software}}
+\headcommand {\beamer@subsubsectionentry {0}{1}{3}{1}{6}{Socket}}
+\headcommand {\slideentry {1}{3}{1}{6/6}{Software}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\beamer@subsubsectionentry {0}{1}{3}{2}{7}{MongoDB}}
+\headcommand {\slideentry {1}{3}{2}{7/7}{Software}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\slideentry {1}{3}{3}{8/8}{Software}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\beamer@sectionpages {3}{8}}
+\headcommand {\beamer@subsectionpages {6}{8}}
+\headcommand {\sectionentry {2}{Basic Scenario}{9}{Basic Scenario}{0}}
+\headcommand {\beamer@subsectionpages {9}{8}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{9}{Ethernet Connection}}
+\headcommand {\slideentry {2}{1}{1}{9/9}{Ethernet Connection}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\slideentry {2}{1}{2}{10/10}{Ethernet Connection}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\beamer@subsectionpages {9}{10}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{11}{Data Extraction}}
+\headcommand {\slideentry {2}{2}{1}{11/11}{Data Extraction}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\slideentry {2}{2}{2}{12/12}{Data Extraction}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@subsectionpages {11}{12}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{13}{Controller}}
+\headcommand {\slideentry {2}{3}{1}{13/13}{Controller}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\beamer@subsectionpages {13}{13}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{14}{Machining Process}}
+\headcommand {\slideentry {2}{4}{1}{14/14}{Machining Process}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\beamer@subsectionpages {14}{14}}
+\headcommand {\beamer@subsectionentry {0}{2}{5}{15}{Data Transmission}}
+\headcommand {\slideentry {2}{5}{1}{15/15}{Data Transmission}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\slideentry {2}{5}{2}{16/16}{Data Transmission}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\beamer@subsectionpages {15}{16}}
+\headcommand {\beamer@subsectionentry {0}{2}{6}{17}{Primary Scenario Demo}}
+\headcommand {\slideentry {2}{6}{1}{17/17}{Primary Scenario Demo}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\beamer@sectionpages {9}{17}}
+\headcommand {\beamer@subsectionpages {17}{17}}
+\headcommand {\sectionentry {3}{Application Scenario}{18}{Application Scenario}{0}}
+\headcommand {\slideentry {3}{0}{1}{18/18}{}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\slideentry {3}{0}{2}{19/19}{}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\beamer@subsectionpages {18}{19}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{20}{G-code Payload R values}}
+\headcommand {\slideentry {3}{1}{1}{20/20}{G-code Payload R values}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\beamer@subsectionpages {20}{20}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{21}{Dynamically Updating Plot}}
+\headcommand {\slideentry {3}{2}{1}{21/21}{Dynamically Updating Plot}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\beamer@subsectionpages {21}{21}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{22}{Find data}}
+\headcommand {\slideentry {3}{3}{1}{22/22}{Find data}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\slideentry {3}{3}{2}{23/23}{Find data}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\beamer@subsectionpages {22}{23}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{24}{Application Scenario Demo}}
+\headcommand {\slideentry {3}{4}{1}{24/24}{Application Scenario Demo}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\beamer@sectionpages {18}{24}}
+\headcommand {\beamer@subsectionpages {24}{24}}
+\headcommand {\sectionentry {4}{Conclusion}{25}{Conclusion}{0}}
+\headcommand {\slideentry {4}{0}{1}{25/25}{}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\slideentry {4}{0}{2}{26/26}{}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\slideentry {4}{0}{3}{27/27}{}{0}}
+\headcommand {\beamer@framepages {27}{27}}
+\headcommand {\beamer@partpages {1}{27}}
+\headcommand {\beamer@subsectionpages {25}{27}}
+\headcommand {\beamer@sectionpages {25}{27}}
+\headcommand {\beamer@documentpages {27}}
+\headcommand {\gdef \inserttotalframenumber {27}}
